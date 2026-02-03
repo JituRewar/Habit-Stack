@@ -1,0 +1,209 @@
+.wrapper {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+  background: 
+    radial-gradient(circle at top left, rgba(124, 58, 237, 0.2), transparent),
+    radial-gradient(circle at bottom right, rgba(0, 245, 255, 0.1), transparent),
+    #020617;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 24px;
+  backdrop-filter: blur(14px);
+  text-align: center;
+  color: #e5e7eb;
+  box-shadow:
+    0 0 40px rgba(0, 245, 255, 0.08),
+    0 25px 50px -12px rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, #00f5ff, #ff4ecd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.progressInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.progressInfo span {
+  color: #cbd5f5; 
+}
+
+.progressBar {
+  width: 100%;
+  height: 10px;
+  background: #020617;
+  border-radius: 10px;
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00f5ff, #a855f7);
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 245, 255, 0.8);
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.inputArea {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.inputArea input {
+  flex: 1;
+  background: #020617;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 14px;
+  border-radius: 14px;
+  color: #e5e7eb;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.inputArea input::placeholder {
+  color: #94a3b8; 
+}
+
+.inputArea input:focus {
+  border-color: #00f5ff;
+  box-shadow: 0 0 12px rgba(0, 245, 255, 0.5);
+}
+
+.inputArea button {
+  background: linear-gradient(135deg, #00f5ff, #a855f7);
+  color: #020617;
+  border: none;
+  padding: 0 24px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 18px rgba(0, 245, 255, 0.7);
+  transition: all 0.25s ease;
+}
+
+.inputArea button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 30px rgba(0, 245, 255, 1),
+    0 0 50px rgba(168, 85, 247, 0.6);
+}
+.btndiv button{
+  background: linear-gradient(135deg, #00f5ff, #a855f7);
+  color: #020617;
+  border: none;
+  padding: 0 24px;
+  margin: 0 20px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 18px rgba(0, 245, 255, 0.7);
+  transition: all 0.25s ease;
+}
+.btndiv button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 30px rgba(0, 245, 255, 1),
+    0 0 50px rgba(168, 85, 247, 0.6);
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.item:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.25);
+}
+
+.habitText {
+  color: #e5e7eb; 
+  font-size: 0.95rem;
+}
+
+.done {
+  background: rgba(16, 185, 129, 0.08);
+  opacity: 0.85;
+}
+
+.done .habitText {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #00f5ff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #020617;
+  transition: all 0.2s ease;
+}
+
+.done .checkbox {
+  background: #00f5ff;
+  border-color: #00f5ff;
+  box-shadow: 0 0 12px #00f5ff;
+}
+
+.deleteBtn {
+  background: rgba(255, 78, 205, 0.12);
+  border: none;
+  color: #ff4ecd;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.deleteBtn:hover {
+  background: #ff4ecd;
+  color: #020617;
+  box-shadow: 0 0 14px #ff4ecd;
+}
+.textGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryBadge {
+  font-size: 0.7rem;
+  color: #7C3AED;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
